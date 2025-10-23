@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La meva plantilla web</title>
+    <meta name="description" content="La meva plantilla web">
+    <link rel="shortcut icon" href="unnamed.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Inscripció al Curs Online d'Informatica</h1>
+    </header>
+    <main>
+        <form action="./index.html" method="get">
+            <fieldset>
+                <legend><h2>Dades Personals:</h2></legend>
+                <p><strong>Nom Complet:</strong></p>
+                <input type="text" minlength="3" maxlength="8" required placeholder="Escriu Aqui...">
+                <p><strong>Correu Electronic:</strong></p>
+                <input type="email" required placeholder="hola@exemple.com">
+                <p><strong>Telefon:</strong></p>
+                <input type="tel" pattern="[6-7]{1}[0-9]{8}" placeholder="ex.123456789">
+                <p><strong>Data de Neixement:</strong></p>
+                <input type="date" required>
+            </fieldset>
+            <fieldset>
+                <legend><h2>Tipus de Curs i Experiència prèvia:</h2></legend>
+                <p><strong>Has Desenvolupat Algun dels seguents treballs:</strong></p>
+                <label><input type="checkbox">Programació bàsica</label>
+                <label><input type="checkbox">Administració de Sistemes</label>
+                <label><input type="checkbox">Desenvolupament de Videojocs</label><br>
+                <label><input type="checkbox">Desenvolupament Web</label>
+                <label><input type="checkbox">Altres</label>
+                <p><strong>Quin d'Aquestos Nivells tens:</strong></p>
+                <label><input type="radio" name="Nivells" required>Novell</label>
+                <label><input type="radio" name="Nivells">Intermedi</label>
+                <label><input type="radio" name="Nivells">Avançat</label>
+            </fieldset>
+            <fieldset>
+                <legend><h2>Interessos i motivació del curs:</h2></legend>
+                <p><strong>Marca las Seccions que Tinguis</strong></p>
+                <label><input type="checkbox">Projectes pràctics</label>
+                <label><input type="checkbox">Tutories online</label>
+                <label><input type="checkbox">Certificats</label>
+                <p><strong>Perque Vols Entrar al Curs?</strong></p>
+                <label><textarea minlength="30" maxlength="150" required placeholder="Escriu el Text Aqui..."></textarea></label>
+                <p><strong>Quin lloc de treball t'agradaria?</strong></p>
+                <input list="Treballs" id="Treball" name="Treball" placeholder="Ciberseguretat, DevOps..." required>
+                <datalist id="Treballs">
+                <option value="Ciberseguretat">
+                <option value="DevOps">
+                <option value="Frontend">
+                <option value="Backend">
+                </datalist>
+            </fieldset>
+            <fieldset>
+                <legend><h2>Fitxer i acceptació de condicions</h2></legend>
+                <input type="file">
+                <input type="checkbox" required>Accepto els Termes i Condicions del Curs
+            </fieldset> <br>
+            <button>Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; Marc Alonso 2025 - Informatic Company</p>
+    </footer>
+</body>
+</html>
