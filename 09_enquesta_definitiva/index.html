@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquesta definitiva</title>
+    <meta name="description" content="Enquesta definitiva">
+    <link rel="shortcut icon" href="unnamed.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Enquesta Èpica de Superherois</h1>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend><h2>Dades Personals</h2></legend>
+            <strong><label for="heroName">Nom del Superheroi:</label><br></strong>
+            <input type="text" id="heroName" name="heroName" required minlength="3" maxlength="50" pattern="[A-Za-z\s]+" title="Nom vàlid (només lletres i espais)."><br>
+
+            <strong><label for="email">Correu de contacte:</label><br></strong>
+            <input type="email" id="email" name="email" required><br>
+
+            <strong><label for="password">Clau secreta:</label><br></strong>
+            <input type="password" id="password" name="password" required minlength="6" title="La clau ha de tenir almenys 6 caràcters."><br>
+
+            <strong><label for="battles">Nombre de batalles lluitades aquest any:</label><br></strong>
+            <input type="number" id="battles" name="battles" required min="0" max="100"><br>
+
+            <strong><label for="powerLevel">Nivell de poder (1-100):</label><br></strong>
+            <input type="range" id="powerLevel" name="powerLevel" required min="1" max="100"><br>
+
+            <strong><label for="firstAppearance">Data de la primera aparició:</label><br></strong>
+            <input type="date" id="firstAppearance" name="firstAppearance" required><br>
+
+            <strong><label for="meetingTime">Hora disponible per reunions:</label><br></strong>
+            <input type="time" id="meetingTime" name="meetingTime" required><br>
+
+            <strong><label for="costumeColor">Color principal del vestit:</label><br></strong>
+            <input type="color" id="costumeColor" name="costumeColor" requirred><br>
+
+            <strong><label for="website">Pàgina web oficial:</label><br></strong>
+            <input type="url" id="website" name="website" required><br>
+
+            <strong><label for="emergencyPhone">Telèfon d'emergències:</label><br></strong>
+            <input type="tel" id="emergencyPhone" name="emergencyPhone" required pattern="[0-9]{9}" title="Telèfon vàlid (9 dígits)."><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><h2>Tipus de Superheroi</h2></legend>
+            <label>
+                <input type="radio" name="heroType" value="hero" required> Heroi
+            </label>
+            <label>
+                <input type="radio" name="heroType" value="sidekick" required> Ajudant
+            </label>
+            <label>
+                <input type="radio" name="heroType" value="villain" required> Malvat
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend><h2>Superpoders</h2></legend>
+            <label>
+                <input type="checkbox" name="powers" value="fly"> Volar
+            </label>
+            <label>
+                <input type="checkbox" name="powers" value="invisibility"> Invisibilitat
+            </label>
+            <label>
+                <input type="checkbox" name="powers" value="superStrength"> Superforça
+            </label>
+            <label>
+                <input type="checkbox" name="powers" value="telepathy"> Telepatia
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend><h2>Univers</h2></legend>
+            <strong><label for="universe">Tria el teu univers:</label></strong>
+            <select id="universe" name="universe" required>
+                <option value="">Selecciona...</option>
+                <option value="marvel">Marvel</option>
+                <option value="dc">DC</option>
+                <option value="manga">Manga</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend><h2>Enquesta</h2></legend>
+            <strong><label>Quin és el teu enemic preferit?</label><br></strong>
+            <label>
+                <input type="radio" name="favoriteEnemy" value="enemy1" required> Joker <br>
+            </label>
+            <label>
+                <input type="radio" name="favoriteEnemy" value="enemy2" required> Thanos <br>
+            </label>
+
+            <strong><label>Quin seria el teu gadget ideal?</label><br></strong>
+            <label>
+                <input type="radio" name="idealGadget" value="gadget1" required> Batmòbil <br>
+            </label>
+            <label>
+                <input type="radio" name="idealGadget" value="gadget2" required> Equip de invisibilitat <br>
+            </label>
+
+            <strong><label>Amb quin superheroi mai faries equip?</label><br></strong>
+            <label>
+                <input type="radio" name="neverTeamUp" value="hero1" required> Hulk <br>
+            </label>
+            <label>
+                <input type="radio" name="neverTeamUp" value="hero2" required> Ant-Man <br>
+            </label>
+        </fieldset><br>
+
+        <button>Enviar Enquesta</button>
+    </form>
+</body>
+</html>
